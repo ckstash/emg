@@ -12,6 +12,18 @@ It can visualize the generated graph, compose a melody in MIDI, and export it as
 - Fully configurable parameters: scale, tempo, k‑mer length, repeats, and more
 - Designed for reproducibility with a random seed
 
+### System Prerequisites
+
+- [FFmpeg](https://ffmpeg.org/)
+- [FluidSynth](https://www.fluidsynth.org/)
+
+E.g., these tools can be installed using Homebrew on Mac OS:
+
+```bash
+brew install ffmpeg
+brew install fluid-synth
+```
+
 ## Installation
 
 ```bash
