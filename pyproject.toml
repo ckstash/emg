@@ -11,8 +11,7 @@ dependencies = [
     "matplotlib>=3.10.5",
     "midi2audio>=0.1.1",
     "midiutil>=1.2.1",
-    "networkx>=3.5",
-    "pydoc-markdown>=4.8.2",
+    "networkx>=3.5"
 ]
 
 [project.urls]
