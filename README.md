@@ -17,7 +17,7 @@ It can visualize the generated graph, compose a melody in MIDI, and export it as
 - [FFmpeg](https://ffmpeg.org/)
 - [FluidSynth](https://www.fluidsynth.org/)
 
-E.g., these tools can be installed using Homebrew on Mac OS:
+These tools can be installed using Homebrew on Mac OS:
 
 ```bash
 brew install ffmpeg
