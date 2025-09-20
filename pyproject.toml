@@ -1,6 +1,7 @@
 [project]
 name = "emg"
 version = "0.1.0"
+license = { file = "LICENSE" }
 description = "Python library for generating melodies using the concept of Eulerian paths"
 readme = "README.md"
 authors = [
