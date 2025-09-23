@@ -36,7 +36,7 @@ brew install fluid-synth
 
 ---
 
-## 🚀 Example Usage
+## 🚀 Quick Start
 
 ```Python
 from emg.generator import EulerianMelodyGenerator
