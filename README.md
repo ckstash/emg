@@ -1,17 +1,16 @@
 # Eulerian Melody Generator
 
-**emg** is a Python library for generating algorithmic melodies using **Eulerian paths** with **De Bruijn graphs**. It can visualize the generated graph, compose a melody in MIDI, and export it as an MP3 using a SoundFont. MuseScore has a number of SoundFont files (e.g., *TimGM6mb.sf2*) that can be downloaded [here](https://musescore.org/en/handbook/3/soundfonts-and-sfz-files).
+**emg** is a Python library for generating algorithmic melodies using Eulerian paths with De Bruijn graphs. It can visualize the generated graph, compose a melody in MIDI, and export it as an MP3 using a SoundFont. MuseScore has a number of SoundFont files (e.g., *TimGM6mb.sf2*) that can be downloaded [here](https://musescore.org/en/handbook/3/soundfonts-and-sfz-files).
 
 ---
 
 ## ✨ Features
 
-- Generate **k‑mers** over a chosen musical scale
-- Build and visualize **De Bruijn graphs**
-- Find **Eulerian paths** to create coherent melodic sequences
-- Export melodies as **MIDI** and **MP3**
-- Fully configurable parameters: scale, tempo, k‑mer length, repeats, and more
-- Designed for reproducibility with a random seed
+- Stochastically generate musical motifs (or k-mers) over a chosen musical scale
+- Build and visualize a De Bruijn graph from the musical motifs
+- Find Eulerian paths in the graph to create coherent melodic sequences
+- Export melodies in MP3 format
+- Fully configurable parameters: scale, tempo, k‑mer length, repeats, etc.
 
 ---
 
@@ -61,6 +60,13 @@ generator.run_generation_pipeline(
     graph_png_path="graph.png",
     mp3_output_path="melody.mp3"
 )
+```
+
+Use FFmpeg to convert the MP3 file to an MP4 file (taking the PNG export of the de Bruijn graph - or some other image - as cover art), for uploading to platforms such as YouTube:
+```Bash
+ffmpeg -loop 1 -i graph.png -i melody.mp3 \
+  -c:v libx264 -tune stillimage -c:a aac -b:a 192k \
+  -pix_fmt yuv420p -shortest melody.mp4
 ```
 
 ---
