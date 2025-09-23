@@ -1,16 +1,16 @@
 # Eulerian Melody Generator
 
-**emg** is a Python library for generating algorithmic melodies using Eulerian paths with De Bruijn graphs. It can visualize the generated graph, compose a melody in MIDI, and export it as an MP3 using a SoundFont. MuseScore has a number of SoundFont files (e.g., *TimGM6mb.sf2*) that can be downloaded [here](https://musescore.org/en/handbook/3/soundfonts-and-sfz-files).
+**emg** is a Python library for generating algorithmic melodies using Eulerian paths with de Bruijn graphs. It can compose a melody from stochastically generated musical motifs by building a Eulerian path, visualize the related de Bruijn graph, and export the melody as an MP3 using a SoundFont file. MuseScore has a number of SoundFont files (e.g., *TimGM6mb.sf2*) that can be downloaded [here](https://musescore.org/en/handbook/3/soundfonts-and-sfz-files).
 
 ---
 
 ## ✨ Features
 
 - Stochastically generate musical motifs (or k-mers) over a chosen musical scale
-- Build and visualize a De Bruijn graph from the musical motifs
+- Build and visualize a de Bruijn graph from the musical motifs
 - Find Eulerian paths in the graph to create coherent melodic sequences
-- Export melodies in MP3 format
-- Fully configurable parameters: scale, tempo, k‑mer length, repeats, etc.
+- Export melodies in MP3 format and de Bruijn graphs in PNG format
+- Several configurable parameters: scale, tempo, k‑mer length, repeats, etc.
 
 ---
 
