@@ -1,9 +1,10 @@
 # Eulerian Melody Generator
 
-**emg** is a Python library for generating algorithmic melodies using **Eulerian paths** in **De Bruijn graphs**.  
-It can visualize the generated graph, compose a melody in MIDI, and export it as an MP3 using a SoundFont. MuseScore has a number of SoundFont files (e.g., *TimGM6mb.sf2*) that can be downloaded [here](https://musescore.org/en/handbook/3/soundfonts-and-sfz-files).
+**emg** is a Python library for generating algorithmic melodies using **Eulerian paths** with **De Bruijn graphs**. It can visualize the generated graph, compose a melody in MIDI, and export it as an MP3 using a SoundFont. MuseScore has a number of SoundFont files (e.g., *TimGM6mb.sf2*) that can be downloaded [here](https://musescore.org/en/handbook/3/soundfonts-and-sfz-files).
 
-## Features
+---
+
+## ✨ Features
 
 - Generate **k‑mers** over a chosen musical scale
 - Build and visualize **De Bruijn graphs**
@@ -12,7 +13,17 @@ It can visualize the generated graph, compose a melody in MIDI, and export it as
 - Fully configurable parameters: scale, tempo, k‑mer length, repeats, and more
 - Designed for reproducibility with a random seed
 
-### System Prerequisites
+---
+
+## 📦 Installation
+
+```bash
+pip install emg
+```
+
+Built for Python 3.12 or above.
+
+**System Prerequisites:**
 
 - [FFmpeg](https://ffmpeg.org/)
 - [FluidSynth](https://www.fluidsynth.org/)
@@ -24,17 +35,9 @@ brew install ffmpeg
 brew install fluid-synth
 ```
 
-## Installation
+---
 
-```bash
-pip install emg
-```
-
-## API Documentation
-
-See [here](https://github.com/ckstash/emg/blob/main/API.md)
-
-## Example Usage
+## 🚀 Example Usage
 
 ```Python
 from emg.generator import EulerianMelodyGenerator
@@ -59,3 +62,9 @@ generator.run_generation_pipeline(
     mp3_output_path="melody.mp3"
 )
 ```
+
+---
+
+## 📚 API Reference
+
+See [here](https://github.com/ckstash/emg/blob/main/API.md)
